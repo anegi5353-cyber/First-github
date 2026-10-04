@@ -1,55 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login Page</title>
-
-    <style>
-        body {
-            font-family: Arial;
-            text-align: center;
-            margin-top: 100px;
-        }
-
-        .login {
-            border: 1px solid black;
-            padding: 20px;
-            width: 250px;
-            margin: auto;
-        }
-
-        input {
-            padding: 8px;
-            margin: 8px;
-        }
-
-        button {
-            padding: 8px 25px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body style="
-    background-image: url('https://files.catbox.moe/8ylo14.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-" text="red">
-<h1><span style="color:green">Hello I am Arun <br> I am a basic programmer</span> </h1>
-    <div class="login">
-        <h1>welcome to lucky's world</h1>
-        <h2>Login your desiened page</h2>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Lucky<span>.</span></h2>
+            <button id="themeBtn" onclick="toggleTheme()">🌙</button>
+        </nav>
+    </header>
 
-        <form>
-            <input type="text" placeholder="Username" required>
-            <br>
+    <main>
+        <section id="home" class="hero">
+            <p class="tag">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hi, I'm <span>Lucky</span> 👋</h1>
+            <h2>Beginner Developer | CSE Student</h2>
+            <p>I am learning web development and JavaScript. I enjoy creating simple and creative websites.</p>
+            <a href="#projects" class="btn">View My Projects</a>
+        </section>
 
-            <input type="password" placeholder="Password" required>
-            <br>
+        <section id="about">
+            <h2>👤 About Me</h2>
+            <div class="card">
+                <p>
+                    I am a Computer Science Engineering student and a beginner web developer.
+                    I started my coding journey with HTML and CSS and I am now learning JavaScript.
+                    My goal is to improve my programming skills and build useful projects.
+                </p>
+            </div>
+        </section>
 
-            <button type="submit">Login</button>
-        </form>
+        <section id="skills">
+            <h2>🛠️ My Skills</h2>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">C Programming</div>
+                <div class="skill">GitHub</div>
+                <div class="skill">Responsive Design</div>
+            </div>
+        </section>
 
-    </div>
-<script src="script.js"></script>
+        <section id="projects">
+            <h2>🚀 My Projects</h2>
+            <div class="projects">
+                <div class="card project">
+                    <h3>🌐 Login Page</h3>
+                    <p>A simple login page created using HTML and CSS.</p>
+                </div>
+                <div class="card project">
+                    <h3>🍽️ Restaurant Page</h3>
+                    <p>A beginner-friendly restaurant promotional webpage.</p>
+                </div>
+                <div class="card project">
+                    <h3>💼 Personal Portfolio</h3>
+                    <p>This portfolio website, created with HTML, CSS and JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>📩 Contact Me</h2>
+            <div class="card contact">
+                <p>Want to connect with me?</p>
+                <button class="btn" onclick="showMessage()">Say Hello 👋</button>
+                <p id="message"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Lucky | Made with HTML, CSS & JavaScript ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
